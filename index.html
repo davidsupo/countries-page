@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./assets/ico.png" />
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Countries Page</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Rest Countries</h1>
+    <input class="input" id="search" placeholder="Search country"/>
+    <small id="error" class="error-search"></small>
+  </header>
+  <div class="container">
+    <main>
+      <section id="countries" class="grid-container">
+      </section>
+    </main>
+  </div>
+  <footer>
+    <a href="https:github.com/davidsupo" target="_blank">By David Supo</a>
+  </footer>
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <div class="modal__header" id="modal-title">
+      </div>
+      <div class="modal__body" id="modal-content">
+      </div>
+      <div class="modal__footer">
+        <button class="btn" onclick="removeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
